@@ -1,0 +1,265 @@
+@import "css/flickity.css";
+@import "css/first-cell.css";
+@import "css/second-cell.css";
+@import "css/fourth-cell.css";
+@import "css/socmed.css";
+@import "css/offcanvas.css";
+@import "css/fifth-cell.css";
+@import "css/sixth-cell.css";
+
+*
+{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #0061FF, #00ff87, #40C9FF);
+  background-size: 300% 300%;
+  animation: backgroundAnimate 8s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+@keyframes backgroundAnimate {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+/*
+.wave {
+  background: rgb(255 255 255 / 25%);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 30em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.00em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.0em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+      transform: translateX(1);
+  }
+
+  25% {
+      transform: translateX(-25%);
+  }
+
+  50% {
+      transform: translateX(-50%);
+  }
+
+  75% {
+      transform: translateX(-25%);
+  }
+
+  100% {
+      transform: translateX(1);
+  }
+}
+*/
+.custom-container {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  height: 95vh;
+  background-color: rgba(255, 255, 255, 0.7); /* Slightly white transparent background */  
+  border-radius: 70px;
+  border: 3px solid rgba(0, 0, 0, 0.7);
+  box-shadow: 4px 5px 10px #c32aa3; /* Subtle shadow */
+}
+
+.right-section {
+  flex: 1;
+  max-width: 500px;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.right-section h2 {
+  font-family: "Kodchasan", sans-serif;
+  font-weight: bolder;
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.right-section h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: boldER;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.right-section p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.right-section img {
+  height: 300px; 
+  width: 300px; 
+  border-radius: 90px;
+  border: 1px solid black;
+  margin-bottom: 1rem;
+}
+
+.right-section .img-background {
+  background-color: white;
+  margin-left: 0;
+}
+
+.main-carousel {
+  margin-right: 50px;
+  flex: 1;
+  max-width: 60%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 255, 135, 0.3);
+  border-left: 3px solid rgba(0, 0, 0, 0.7);
+  border-right: 3px solid rgba(0, 0, 0, 0.7);
+}
+
+.carousel-cell {
+  overflow: auto;
+  background: #ffffff;
+  width: 70%;
+  height: auto;
+  min-height: 95%;
+  max-height: 95%;
+  margin: 1.8rem 30px 0 0;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5); /* Proper shadow */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; 
+}
+
+.carousel-cell:hover {
+  box-shadow: 8px 8px 12px #c32aa3; /* Proper shadow */
+}
+
+@media screen and (max-width: 1600px) {
+  body {
+    overflow: visible;
+  }
+  .custom-container {
+    flex-direction: column-reverse; /* Move the right section to the top */
+    height: 205vh;
+    margin: 2rem 0;
+  }
+
+  .right-section {
+    margin: 2rem 0;
+    flex: 0;
+  }
+
+  .main-carousel {
+    margin-right: 0;
+    width: 100%; /* Ensure carousel takes full width on small screens */
+    max-width: 100%;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+  }
+
+  .carousel-cell {
+    height: 95%;
+  }
+
+  #first-cell .profile {
+    margin: 1rem 0;
+    width: 10rem; /* Set the size of the image */
+    height: 10rem;
+    border-radius: 50%; /* Makes the image round */
+    z-index: 2; /* Keeps the image on top */
+    border: 1px solid black;
+  }
+
+  #first-cell button {
+    margin-top: 1rem;
+    font-size: 20px;
+  }
+
+  .projects {
+    flex-direction: column;  /* Stack projects vertically */
+    gap: 10px;
+  }
+
+  .project {
+    width: 80%;  /* Adjust width of each project */
+    margin-bottom: 20px;
+  }
+
+  /* Image styles */
+  .project img {
+    width: auto;
+    height: 20%;
+  }
+
+  .progress-div {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align progress groups */
+  }
+
+  .progress-group {
+    flex: 1 1 100%; /* Full width on mobile */
+    margin: 5px 0;
+    width: 90%;
+  }
+
+  .flickity-page-dots {
+    display: none;
+  }
+
+  .flickity-prev-next-button {
+    height: 30px;
+    width: 30px;
+  }
+
+  .flickity-prev-next-button:hover {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+
+@media screen and (max-width: 1760px) {
+
+  .main-carousel {
+    background-color: transparent;
+    border: none;
+  }
+}

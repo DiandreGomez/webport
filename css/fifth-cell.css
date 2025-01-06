@@ -1,0 +1,65 @@
+#fifth-cell {
+    display: block;
+    background: linear-gradient(180deg, #BFF4F3, #00ff87);
+}
+
+#fifth-cell .info {
+    padding: 2rem 0;
+}
+
+#fifth-cell h3 {
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 100;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    color: #c02fa1;
+    text-shadow: 5px 5px 10px black;
+}
+
+#fifth-cell h4 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.educ-tab {
+    margin: auto;
+    border-radius: 30px;
+    width: 95%;
+    height: 100%;
+    border: 2px solid black;
+    background-color: white ;
+}
+
+.educ-tab .nav-tabs {
+    border-bottom: 1px solid black; /* Adjust thickness and color */
+}
+
+.educ-tab .nav-link {
+    width: auto;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    color: black;
+}
+
+#fifth-cell .clearfix {
+    padding: 20px;
+}
+
+#fifth-cell .clearfix p {
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2rem;
+}
+
+  #fifth-cell .nav-link.active {
+    background-color: transparent;
+    border: none;
+    font-weight: 800;
+    color: #00ff87;
+  }
+
+  #fifth-cell .nav-link {
+    border: none;
+  }

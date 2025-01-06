@@ -1,0 +1,49 @@
+
+#sixth-cell {
+    background-color: #BFF4F3;
+}
+
+#sixth-cell h3 {
+    margin-bottom: 2rem;
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+#sixth-cell h3 b {
+    color: #c02fa1;
+}
+
+.form-floating {
+    width: 85%;
+    margin: auto;
+}
+
+.form-floating input,
+.form-floating textarea {
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+#floatingTextarea2 {
+    height: 300px; 
+    line-height: 1.5rem;
+}
+
+.form-floating #comment {
+    height: 300px
+}
+
+.form-floating .form-control {
+    padding-top: 1rem; /* Adjust padding as needed */
+    padding-bottom: 0.25rem; /* Optional, for better alignment */
+    resize: none; /* Allow vertical and horizontal resizing */
+}
+
+#sixth-cell button {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    border: 1px solid black;
+}
+

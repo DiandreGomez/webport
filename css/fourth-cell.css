@@ -1,0 +1,118 @@
+#fourth-cell {
+    background: linear-gradient(180deg, #00ff87, #3bfda3);
+  }
+  
+  #fourth-cell .info {
+    margin: 2rem;
+  }
+  
+  #fourth-cell h3 {
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 100;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    color: #c02fa1;
+    text-shadow: 5px 5px 10px white;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    z-index: 10000;
+  }
+  
+  .projects .card {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    width: 95%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: black 1px solid;
+    box-shadow: 10px 10px 15px #c02fa1;
+  }
+
+  /* Shadow for each project */
+  .project::before {
+    box-shadow: 10px 10px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Layout for left-aligned projects */
+  .project.left {
+    flex-direction: row; /* Image on the left */
+    align-self: flex-start;
+    text-align: left;
+  }
+  
+  /* Layout for right-aligned projects */
+  #card-right {
+    flex-direction: row-reverse; /* Image on the right */
+    align-self: flex-end;
+    text-align: right;
+  }
+
+  .card img {
+    width: 100%; /* Image fully occupies the container */
+    height: 100%;
+    object-fit: cover; /* Maintains aspect ratio and covers the container */
+    border-radius: 5px;
+    background-color: gray;
+  }
+
+  
+  /* Image styles */
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area */
+    border-radius: 5px;
+    background-color: gray;
+  }
+
+  .col-md-4, .col-md-8 {
+    display: flex; /* Helps with alignment */
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+  /* Content styling */
+  .card-body h4 {
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+    border: none;
+  }
+  
+  .card-body a{
+    text-decoration: none;
+  }
+  
+  .card-body a:focus, .card-body a:active {
+    outline: none; /* Removes the border or outline on click */
+    box-shadow: none; /* Prevents any additional focus styling */
+  }
+  
+  .card-body h4:hover {
+    color: #1da1f2;
+  }
+  
+  .card-body p {
+    font-family: 'Montserrat', sans-serif;
+    color: #666;
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  /* Content container */
+  .project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Portfolio</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="flickity.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg, #0061FF, #00FF87, #40C9FF);
+      background-size: 300% 300%;
+      animation: backgroundAnimate 12s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    @keyframes backgroundAnimate {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    .container {
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 95%;
+      height: 95vh;
+      background-color: rgba(255, 255, 255, 0.7); /* Slightly white transparent background */
+      border-radius: 40px;
+      border: 3px solid rgba(0, 0, 0, 0.7);
+      box-shadow: 0 8px 10px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+    }
+
+    .left-section {
+      flex: 1;
+      max-width: 300px;
+      margin-right: 100px;
+      text-align: center;
+    }
+
+    .left-section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .left-section p {
+      font-size: 1rem;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    .main-carousel {
+      margin-top: 3vh;
+      flex: 1;
+      max-width: 1200px;
+      width: 100%;
+      height: 95%;
+      overflow: hidden;
+    }
+
+    .carousel-cell {
+      background: #ffffff;
+      width: 80%;
+      height: 95%;
+      margin-right: 30px;
+      border-radius: 10px;
+      border: 2px solid black;
+      box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5); /* Proper shadow */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .info h3 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .info p {
+      margin: 0;
+      font-size: 1rem;
+      color: #666;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-section">
+      <img src="me.png" alt="Gomez" style="height: 200px; width: 200px;">
+      <h2>Diandre Dawson B. Gomez</h2>
+      <p>LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM </p>
+    </div>
+    <div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": true }'>
+      <div class="carousel-cell">
+        <div class="info">
+          <h3>Title 1</h3>
+          <p>Description or additional info for the first cell.</p>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="info">
+          <h3>Title 2</h3>
+          <p>Description or additional info for the second cell.</p>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="info">
+          <h3>Title 3</h3>
+          <p>Description or additional info for the third cell.</p>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="info">
+          <h3>Title 1</h3>
+          <p>Description or additional info for the first cell.</p>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="info">
+          <h3>Title 2</h3>
+          <p>Description or additional info for the second cell.</p>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="info">
+          <h3>Title 3</h3>
+          <p>Description or additional info for the third cell.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="flickity.pkgd.js"></script>
+</body>
+</html>
+
+<----------- 2nd Gumagana ---------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Portfolio</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="flickity.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg, #0061FF, #00FF87, #40C9FF);
+      background-size: 300% 300%;
+      animation: backgroundAnimate 12s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    @keyframes backgroundAnimate {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      height: 90vh;
+      max-width: 1400px;
+      background-color: rgba(255, 255, 255, 0.8); /* Slightly white transparent background */
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    }
+
+    .left-section {
+      flex: 1;
+      max-width: 300px;
+      margin-right: 20px;
+      text-align: center;
+    }
+
+    .left-section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .left-section p {
+      font-size: 1rem;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    .main-carousel {
+      flex: 2;
+      max-width: 1200px;
+      width: 100%;
+      overflow: hidden;
+      padding: 20px;
+    }
+
+    .carousel-cell {
+      background: #ffffff;
+      width: 80%;
+      height: 90vh;
+      margin-right: 30px;
+      border-radius: 10px;
+      border: 2px solid black;
+      box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5); /* Proper shadow */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .info h3 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .info p {
+      margin: 0;
+      font-size: 1rem;
+      color: #666;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-section">
+      <h2>Welcome!</h2>
+      <p>This is a carousel demo. Use the navigation to explore different cells and content.</p>
+    </div>
+    <div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": true }'>
+      <div class="carousel-cell">
+        <div class="info">
+          <h3>Title 1</h3>
+          <p>Description or additional info for the first cell.</p>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="info">
+          <h3>Title 2</h3>
+          <p>Description or additional info for the second cell.</p>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="info">
+          <h3>Title 3</h3>
+          <p>Description or additional info for the third cell.</p>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="info">
+          <h3>Title 1</h3>
+          <p>Description or additional info for the first cell.</p>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="info">
+          <h3>Title 2</h3>
+          <p>Description or additional info for the second cell.</p>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="info">
+          <h3>Title 3</h3>
+          <p>Description or additional info for the third cell.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="flickity.pkgd.js"></script>
+</body>
+</html>
+
+
+<-------- 3rd Gumagana -------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Portfolio</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="flickity.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg, #0061FF, #00FF87, #40C9FF);
+      background-size: 300% 300%;
+      animation: backgroundAnimate 12s ease infinite;
+      display: flex;
+      justify-content: flex-start; /* Aligns content to the left */
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    @keyframes backgroundAnimate {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    .main-carousel {
+      margin-left: auto; /* Aligns to the right */
+      margin-right: 2rem;
+      width: 100%;
+      max-width: 1200px;
+      overflow: visible; /* Ensures shadows are not clipped */
+      padding: 20px;
+      /*
+      border-radius: 40px;
+      border: 3px black solid;
+      background-color: rgba(119, 119, 119, 0.521);
+      */
+    }
+
+    .carousel-cell {
+      background: #ffffff;
+      width: 80%;
+      height: 90vh;
+      margin-right: 30px;
+      margin-bottom: 9px;
+      border-radius: 10px;
+      border: 2px solid black;
+      box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5); /* Proper shadow */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+
+    .info h3 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .info p {
+      margin: 0;
+      font-size: 1rem;
+      color: #666;
+    }
+
+  </style>
+
+</head>
+<body>
+  <div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": true }'>
+    <div class="carousel-cell">
+      <div class="info">
+        <h3>Title 1</h3>
+        <p>Description or additional info for the first cell.</p>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="info">
+        <h3>Title 2</h3>
+        <p>Description or additional info for the second cell.</p>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="info">
+        <h3>Title 3</h3>
+        <p>Description or additional info for the third cell.</p>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="info">
+        <h3>Title 1</h3>
+        <p>Description or additional info for the first cell.</p>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="info">
+        <h3>Title 2</h3>
+        <p>Description or additional info for the second cell.</p>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="info">
+        <h3>Title 3</h3>
+        <p>Description or additional info for the third cell.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="flickity.pkgd.js"></script>
+</body>
+</html>
+
+<---- Placeholder ------> 
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Portfolio</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="flickity.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg, #0061FF, #00FF87, #40C9FF);
+      background-size: 300% 300%;
+      animation: backgroundAnimate 12s ease infinite;
+      display: flex;
+      justify-content: flex-start; /* Aligns content to the left */
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    @keyframes backgroundAnimate {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    .title-card {
+      display: flex;
+      flex-direction: column;
+      margin-right: auto;
+      margin-left: 2rem;
+      background-color: rgba(255, 255, 255, 0.7); /* Slightly white transparent background */
+      border-radius: 40px;
+      border: 3px solid rgba(0, 0, 0, 0.7);
+      box-shadow: 0 8px 10px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+      width: 20%;
+    }
+
+    .main-carousel {
+      margin: auto 3rem;
+      width: 62.5%;
+      height: 90vh;
+      overflow: visible; /* Ensures shadows are not clipped */
+      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.7); /* Slightly white transparent background */
+      border-radius: 40px;
+      border: 3px solid rgba(0, 0, 0, 0.7);
+      box-shadow: 0 8px 10px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+      /*
+      border-radius: 40px;
+      border: 3px black solid;
+      background-color: rgba(119, 119, 119, 0.521);
+      */
+    }
+
+    .carousel-cell {
+      background: #ffffff;
+      width: 80%;
+      height: 80vh;
+      margin-right: 30px;
+      margin-bottom: 9px;
+      border-radius: 10px;
+      border: 2px solid black;
+      box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5); /* Proper shadow */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+
+    .info h3 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .info p {
+      margin: 0;
+      font-size: 1rem;
+      color: #666;
+    }
+
+  </style>
+
+</head>
+<body>
+  <div class="title-card">
+    hi
+
+  </div>
+  <div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": true }'>
+    <div class="carousel-cell">
+      <div class="info">
+        <h3>Title 1</h3>
+        <p>Description or additional info for the first cell.</p>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="info">
+        <h3>Title 2</h3>
+        <p>Description or additional info for the second cell.</p>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="info">
+        <h3>Title 3</h3>
+        <p>Description or additional info for the third cell.</p>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="info">
+        <h3>Title 1</h3>
+        <p>Description or additional info for the first cell.</p>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="info">
+        <h3>Title 2</h3>
+        <p>Description or additional info for the second cell.</p>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="info">
+        <h3>Title 3</h3>
+        <p>Description or additional info for the third cell.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="flickity.pkgd.js"></script>
+</body>
+</html>

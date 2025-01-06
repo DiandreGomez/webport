@@ -1,0 +1,89 @@
+#offcanvasExample,
+#offcanvasExample2,
+#offcanvasExample3 {
+  width: 700px; /* Set a custom width */
+  background: linear-gradient(180deg, #0061FF, #00ff87, #40C9FF);
+  background-size: 200% 400%;
+  animation: backgroundAnimate 1s ease infinite;
+  border-left: 2px solid black;
+}
+
+@keyframes backgroundAnimate {
+    0%, 100% {
+        background-position: 0% 0%; /* Start at the top */
+      }
+      50% {
+        background-position: 0% 100%; /* Move to the bottom */
+      }
+  }
+
+.offcanvas h5{
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;    
+}
+
+.offcanvas-header {
+    background-color: white;
+    border-bottom: 1px solid black;
+    margin: 0;
+}
+
+.offcanvas-body {
+    justify-content: center;
+    text-align: center;
+}
+
+.offcanvas-body div{
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid black;
+    background-color: white;
+    padding: 1.2rem;
+    border-radius: 40px;
+    text-align: justify;
+    line-height: 30px;
+    margin: 0 1.5rem;
+}
+
+.offcanvas-body a {
+    font-family: 'Kodchasan', sans-serif;
+}
+
+.offcanvas-body button {
+    font-size: 1.5rem;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 0px 7px 15px rgb(72, 72, 245, .9);
+}
+
+.offcanvas-body h3 {
+    font-weight: 800;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.offcanvas-body ol {
+    margin: 0;
+    text-align: justify;
+}
+
+.offcanvas-body hr {   
+  border: none;
+  height: 3px;
+  /* Set the hr color */
+  color: #000;  /* old IE */
+  background-color: #000;  /* Modern Browsers */
+}
+
+
+
+/* Adjust the transition duration for the offcanvas */
+.offcanvas {
+    transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out; /* Default is 0.3s, change to a smaller value like 0.2s for faster transition */
+  }
+  
+  /* If you want to specifically target a faster offcanvas appearance */
+  .offcanvas.show {
+    transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  

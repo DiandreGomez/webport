@@ -1,0 +1,47 @@
+
+
+#first-cell {
+    background: linear-gradient(180deg, #BFF4F3, #2176ff);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #first-cell h3 {
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+  }
+  
+  #first-cell p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: black;
+    margin: 1rem ;
+  }
+  
+  #first-cell p b {
+    color: #c32aa3;
+    font-weight: 700;
+  }
+  
+  #first-cell .profile {
+    margin: 2rem 0;
+    width: 17rem; /* Set the size of the image */
+    height: 17rem;
+    border-radius: 50%; /* Makes the image round */
+    z-index: 2; /* Keeps the image on top */
+    border: 1px solid black;
+    object-fit: cover;
+  }
+  
+  #first-cell button {
+    margin-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    border: 1px solid black;
+    width: 60%;
+    height: auto;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
